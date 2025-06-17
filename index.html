@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to My Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UK Hotels — Modern Selection</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Casino Hotels & Luxury Getaways</h1>
-  <p>Coming soon: Explore the top casino resorts around the world.</p>
+  <nav class="navbar">
+    <div class="container">
+      <span class="logo">UK Hotels</span>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Discover Top UK Hotels</h1>
+      <p>Handpicked casino and classic hotels for your next stay.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="hotels" class="hotels-section container">
+      <h2>Our Hotels</h2>
+      <div class="hotels-list">
+        <div class="hotel-card">
+          <h3>Aspinalls Casino Hotel, London</h3>
+          <span class="tag">Casino Hotel</span>
+          <p>Luxury casino hotel in Mayfair, offering elegant rooms and exclusive gaming experiences.</p>
+        </div>
+        <div class="hotel-card">
+          <h3>Grosvenor Casino Hotel, Manchester</h3>
+          <span class="tag">Casino Hotel</span>
+          <p>Modern hotel with direct access to Grosvenor Casino, perfect for entertainment and comfort.</p>
+        </div>
+        <div class="hotel-card">
+          <h3>The Grand Hotel, York</h3>
+          <span class="tag">Hotel</span>
+          <p>Historic 5-star hotel in York city centre, renowned for its spa and fine dining.</p>
+        </div>
+        <div class="hotel-card">
+          <h3>Kimpton Clocktower Hotel, Manchester</h3>
+          <span class="tag">Hotel</span>
+          <p>Stylish, centrally located hotel with unique Victorian architecture and modern amenities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section container">
+      <h2>About Us</h2>
+      <p>
+        We curate the best UK hotels, from vibrant casino resorts to classic city stays. Our team ensures every listing meets high standards of comfort, service, and experience.
+      </p>
+    </section>
+
+    <section id="contact" class="contact-section container">
+      <h2>Contact</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2025 UK Hotels. All rights reserved.</span>
+    </div>
+  </footer>
 </body>
 </html>
-
