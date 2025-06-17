@@ -1,5 +1,5 @@
 :root {
-  --primary: #1a2233;
+  --primary: #1a2233; 
   --accent: #e63946;
   --bg: #f7f9fa;
   --card: #fff;
@@ -24,8 +24,8 @@ body {
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: auto auto;
   padding: 32px 20px;
 }
 
