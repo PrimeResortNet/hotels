@@ -16,21 +16,24 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
+  background: #f6fafd;
+  color: #1a2233;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 32px 20px;
 }
 
 .navbar {
-  background: var(--primary);
+  background: #183153;
   color: #fff;
-  padding: 14px 0;
+  padding: 18px 0;
+  box-shadow: 0 2px 8px rgba(24,49,83,0.07);
 }
 
 .nav-flex {
@@ -41,114 +44,158 @@ body {
 
 .logo {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 28px;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.08rem;
   transition: color 0.2s;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
 }
 
-.nav-links li a:hover {
-  color: var(--accent);
+.nav-links li a:hover,
+.nav-links li a:focus {
+  color: #4bb6b7;
+  border-bottom: 2px solid #4bb6b7;
 }
 
 .hero {
-  background: var(--accent);
+  background: linear-gradient(90deg, #4bb6b7 0%, #183153 100%);
   color: #fff;
-  padding: 48px 0 32px 0;
+  padding: 56px 0 40px 0;
   text-align: center;
-  border-radius: 0 0 var(--radius) var(--radius);
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 32px;
 }
 
 .hero h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  font-size: 2.3rem;
+  margin-bottom: 14px;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
-.intro-section {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 1.1rem;
+section {
+  margin-bottom: 44px;
+}
+
+.intro-section p {
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  color: #183153;
+}
+
+.about-section h3 {
+  font-size: 1.18rem;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: #4bb6b7;
+}
+
+.about-section ul {
+  margin-left: 22px;
+  margin-bottom: 18px;
+}
+
+.about-section ul li {
+  margin-bottom: 8px;
+}
+
+.about-section p {
+  margin-bottom: 16px;
+}
+
+.team-list {
+  margin-left: 22px;
+  margin-bottom: 18px;
+}
+
+.team-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .hotels-section h2 {
-  color: var(--primary);
+  color: #183153;
   margin-bottom: 18px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .hotels-section h3 {
   margin-top: 24px;
-  margin-bottom: 10px;
-  color: var(--accent);
-  font-size: 1.15rem;
+  margin-bottom: 12px;
+  color: #4bb6b7;
+  font-size: 1.13rem;
 }
 
 .hotels-section ol {
-  margin-left: 20px;
+  margin-left: 22px;
   margin-bottom: 10px;
+  padding-left: 0;
 }
 
 .hotels-section li {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   font-size: 1.08rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e9f0;
 }
 
-.why-section {
-  margin-top: 40px;
-  margin-bottom: 30px;
+.hotels-section li:last-child {
+  border-bottom: none;
 }
 
-.why-section h2 {
-  color: var(--primary);
-  margin-bottom: 14px;
-}
-
-.why-section ul {
-  margin-left: 18px;
-  font-size: 1.08rem;
-}
-
-.why-section li {
-  margin-bottom: 10px;
-}
-
-.explore-section {
-  margin-bottom: 36px;
-}
-
-.explore-section h2 {
-  color: var(--primary);
-  margin-bottom: 12px;
-}
-
-.explore-section ul {
-  margin-left: 18px;
-}
-
+.why-section h2,
+.explore-section h2,
 .contact-section h2 {
-  color: var(--primary);
+  color: #183153;
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+}
+
+.why-section ul,
+.explore-section ul {
+  margin-left: 22px;
+  margin-bottom: 0;
+}
+
+.why-section li,
+.explore-section li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.contact-section p {
   margin-bottom: 10px;
 }
 
 .contact-section a {
-  color: var(--accent);
+  color: #4bb6b7;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .contact-section a:hover {
@@ -156,36 +203,39 @@ body {
 }
 
 .footer {
-  background: var(--primary);
+  background: #183153;
   color: #fff;
   text-align: center;
-  padding: 18px 0 10px 0;
+  padding: 22px 0 12px 0;
   margin-top: 40px;
-  border-radius: var(--radius) var(--radius) 0 0;
-  font-size: 0.98rem;
+  border-radius: 18px 18px 0 0;
+  font-size: 1rem;
 }
 
 .footer a {
-  color: #fff;
+  color: #4bb6b7;
   text-decoration: underline;
   margin: 0 6px;
 }
 
 .ps-note {
-  margin-top: 8px;
-  color: #f1cfcf;
-  font-size: 0.95rem;
+  margin-top: 10px;
+  color: #b8e0e0;
+  font-size: 0.98rem;
 }
 
 @media (max-width: 700px) {
   .container {
-    padding: 12px;
+    padding: 14px;
   }
   .nav-links {
-    gap: 12px;
-    font-size: 0.98rem;
+    gap: 14px;
+    font-size: 1rem;
   }
   .hero h1 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+  }
+  .hero {
+    padding: 36px 0 24px 0;
   }
 }
